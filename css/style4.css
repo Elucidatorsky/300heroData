@@ -1,0 +1,525 @@
+@charset "utf-8";
+/* CSS Document */
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+			*{	 
+				margin:0 auto;
+				border:none;
+				padding:0;
+				outline: 0;
+			}
+			.max{
+			}
+			.backimg{
+				width:100%;
+				height:100%;
+				max-width:100%;
+				position: fixed;
+			}
+			.backimg img{
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				z-index: 1;
+			}
+			a:visited{
+				text-decoration:none;
+			}
+			.clearDiv{
+				clear: both;
+			}
+			.top{
+				width: 100%;
+				background-color:rgba(0,0,0,0.8);
+				position: relative;
+				z-index: 3;
+			}
+			.topcontent{
+				width: 100%;
+			}
+			.picleft{
+				width: 140px;
+				height: 80px;
+				float: left;
+				display: none;
+			}
+			.picleft img{
+				width: 140px;
+				height: 80px;
+			}
+			.picright{
+				width: 140px;
+				height: 80px;
+				float: left;
+				display: none;
+			}
+			.topcenter{
+				line-height: 40px;
+				width: 100%;
+				float: left;
+			}
+			.headtitle{
+				width: 85%;
+				color: white;
+				font-size: 25px;
+				margin-left: 3%;
+				float: left;
+			}
+			.headfuhao{
+				width: 12%;
+				height: 40px;
+				color: white;
+				background-color: rgba(0,0,0,0.2);
+				font-size: 30px;
+				cursor: pointer;
+				float: left;
+			}
+			.headtitleright{
+				display: none;
+			}
+			.topcenter ul{
+				display: none;
+			}
+			.topcenter ul li{
+				text-align: center;
+				width: 100%;
+				float: left;
+				position: relative;
+				/*z-index: 2;*/
+				list-style:none;
+				cursor: pointer;
+				background-color: rgba(0,0,0,0.4);
+				color: white;
+			}
+			.topcenter ul li a:link{
+				text-decoration:none;
+				color: whitesmoke; 
+			}
+			.topcenter ul li a:visited{
+				color: white;
+				text-decoration:none;
+			}
+			.topcenter ul li:hover{
+				background-color: rgba(0,0,0,0.2);
+			}
+			.topcenter ul li:hover ul{
+				display: block;
+			}
+			.topcenter ul li ul{
+				/*position:relative;*/
+				display: none;
+			}
+			.topcenter ul li ul li{
+				width: 100%;
+				float: left;
+				list-style: none;
+				color: black;
+				background-color: rgba(255,255,255,0.6);
+				/*z-index: 2;*/
+			}
+			.topcenter ul li ul li a:link{
+				text-decoration:none;
+				color: black;
+			}
+			.topcenter ul li ul li:hover{
+				background-color:indianred ;
+			}
+			.content{
+				width: 100%;
+				position: relative;
+				z-index: 2;
+			}
+			.left{
+				width: 100%;
+				float: left;
+			}
+			.leftpic {
+				width: 96%;
+				margin: 2%;
+				border-radius: 8px;
+				box-shadow: 0 0 8px 4px black;
+				overflow: hidden;
+			}
+			
+			.leftpicroll {
+				width: 1000%;
+			}
+			
+			.leftpicroll img {
+				width: 10%;
+				float: left;
+				cursor: pointer;
+			}
+			.hero{
+				width: 96%;
+				margin-top: 10px;
+				border-radius: 8px;
+				box-shadow: 0 0 8px 4px black;
+				background-color:rgba(255,255,255,0.6);
+			}
+			.herotop{
+				width: 100%;
+				margin-bottom: 3px;
+				text-align: center;
+        		/*line-height: 45px;*/
+        		font-size: 20px;
+				background-color:rgba(0,0,0,0.7);
+				border-radius: 8px 8px 0 0;
+			}
+			.herocontent{
+				width: 100%;
+				background-color:rgba(255,255,255,0.5);
+				border-radius: 0 0 8px 8px;
+			}
+			.heropic{
+				/*position: relative;*/
+				width: 12%;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				margin-left: 2%;
+				margin-right:2%;
+				float: left;
+				text-align: center;
+				/*background-color:rgba(0, 0, 0, 0.4);*/
+				cursor: pointer;
+			}
+			.heropic img{
+				width: 100%;
+			}
+			.heroname {
+				width:100%;
+				font-size:8px;
+				color:black;
+				/*z-index: 1;*/
+				cursor:pointer;
+				border-radius:0 0 10px 10px;
+			}
+			.video,.budin{
+				width: 96%;
+				margin-top: 10px;
+				overflow: hidden;
+				background-color:rgba(255,255,255,0.5);
+				border-radius: 8px;
+				box-shadow: 0 0 8px 4px black;
+			}
+			.videotop,.budintop{
+				width: 100%;
+				margin-bottom: 3px;
+				text-align: center;
+        		/*line-height: 45px;*/
+        		font-size: 20px;
+				background-color:rgba(0,0,0,0.7);
+				border-radius: 8px 8px 0 0;
+			}  
+			.videocontent,.budincontent{
+				width: 100%;
+				border-radius: 0 0 8px 8px;
+			}
+			.videopic,.budinpic{
+				width: 45%;
+				margin: 1%;
+				float: left;
+				text-align: center;
+				position: relative;
+				cursor: pointer;
+			}
+			.videopic img,.budinpic img{
+				width: 100%;
+			}
+			.videoname,.budinname {
+				width:100%;
+				font-size:12px;
+				color:#FFF;
+				background-color:rgba(0, 0, 0, 0.4);
+				overflow: hidden;
+				cursor:pointer;
+				border-radius:0 0 10px 10px;
+				/*z-index: 1;*/
+			}
+			.videohover,.budinhover{
+				width: 100%;
+				position:absolute;
+				top: 0;
+				background-color:rgba(0,0,0,0.8);
+				text-align: left;
+				/*z-index: 2;*/
+				display: none;
+			}
+			.videohovertop,.budinhovertop{
+				font-size:12px;
+				color: ghostwhite;
+				display: none;
+			}
+			.videohoverbottom,.budinhoverbottom{
+				font-size:12px;
+				color: gainsboro;
+				display: none;
+				
+			}
+			.right{
+				width: 100%;
+				float: left;
+			}
+			.login{
+				width: 96%;
+				margin: 2%;
+				border-radius: 8px;
+				box-shadow: 0 0 8px 4px black;
+			}
+			.logintop{
+				width: 100%;
+				height: 40px;
+        		overflow: hidden;
+        		line-height: 40px;
+        		text-align: center;
+        		font-size: 16px;
+				background-color:rgba(0,0,0,0.5);
+				border-radius: 8px 8px 0 0;
+			}
+			.logincontent{
+				width: 100%;
+				border-radius:0 0 8px 8px;
+			}
+			.loginname,.loginlock{
+				width:100%;
+				height: 50px;
+				position: relative;
+				background-color:rgba(255,255,255,0.5);
+			}
+			.loginnamein,.loginlockin{
+				margin-top: 10px ;
+				margin-left: 9%;
+				width: 80%;
+				height: 30px;
+				position: absolute;
+			}
+			.loginnamein img,.loginlockin img{
+				width: 10%;
+				float: left;
+			}
+			.loginnameinput,.loginlockinput{
+				width: 90%;
+				height: 28px;
+				font-size: 16px;
+				border: 0.2% solid red;
+				float: left;
+			}
+			.loginbottom{
+				width: 100%;
+				height: 60px;
+				background-color:rgba(255,255,255,0.5);
+			}
+			.loginloginleft,.loginloginright{
+				width: 50%;
+				height: 50px;
+				float: left;
+				position: relative;
+			}
+			.loginloginleftbutton,.loginloginrightbutton{
+				width: 40%;
+				height: 40px;
+				font-size: 16px;
+				background-color:rgba(0,0,0,0.5);
+				position: absolute;
+				margin-top: 3%;
+				margin-left: 30%;
+				color: white;
+				cursor: pointer;
+			}
+			.fresh{
+				width: 96%;
+				margin: 2%;
+				border-radius: 8px;
+				box-shadow: 0 0 8px 4px black;
+			}
+			.freshtop{
+				width: 100%;
+        		overflow: hidden;
+				background-color:rgba(0,0,0,0.5);
+				border-radius:8px 8px 0 0;
+			}    
+    		.freshtop li {
+    			list-style-type: none;
+        		width: 30%;
+        		text-align: center;
+        		line-height: 30px;
+        		border-radius: 5px;
+        		cursor: pointer;
+        		float: left;
+        		font-size: 16px;
+        		margin: 1%;
+    		}
+    		.freshbanner{
+    			width: 100%;
+        		/*position:relative;/*有用吗？*/*/
+        		overflow: hidden;
+				background-color:rgba(255,255,255,0.5);
+				border-radius:0 0 8px 8px;
+    		}
+    		.freshbannerswich{
+    			width: 100%;
+    			/*position: absolute;/*有用吗？*/*/
+    			overflow: hidden;
+        		display: none;
+    		}
+    		.freshtitle{
+    			width: 96%;
+    			height: 30px;
+    			margin-left: 2%;
+    			margin-right: 2%;
+    			margin-top: 5px;
+    			overflow: hidden;
+    			border-radius: 10px;
+    			line-height: 30px;
+    			font-size: 14px;
+    			float: left;
+				cursor: pointer;
+    			background-color: gainsboro;
+    		}
+    		#select{background: darkslategray;}
+			#block{display: block;}
+			.hotdiscuss{
+				width: 96%;
+				margin: 2%;
+				border-radius: 8px;
+				box-shadow: 0 0 8px 4px black;
+			}
+			.hotdiscusstop{
+				width: 100%;
+				text-align: center;
+        		overflow: hidden;
+        		line-height: 40px;
+        		font-size: 16px;
+				background-color:rgba(0,0,0,0.5);
+				border-radius:8px 8px 0 0;
+			} 
+    		.hotdiscusscontent{
+    			width: 100%;
+        		/*position:relative;/*有用吗？*/*/
+        		overflow: hidden;
+				background-color:rgba(255,255,255,0.5);
+				border-radius:0 0 8px 8px;
+    		}
+    		.hotdiscusstitle{
+    			width: 96%;
+    			height: 30px;
+    			margin-left: 2%;
+    			margin-right: 2%;
+    			margin-top: 5px;
+    			overflow: hidden;
+    			border-radius: 10px;
+    			line-height: 30px;
+    			font-size: 14px;
+    			float: left;
+				cursor: pointer;
+    			background-color: gainsboro;
+    		}
+			.discuss{
+				width: 96%;
+				margin: 2%;
+				border-radius: 8px;
+				box-shadow: 0 0 8px 4px black;
+			}
+			.discusstop{
+				width: 100%;
+				height: 40px;
+				text-align: center;
+        		overflow: hidden;
+        		line-height: 40px;
+        		font-size: 16px;
+				background-color:rgba(0,0,0,0.5);
+				border-radius:8px 8px 0 0;
+			}
+			.out {
+				width: 95.5%;
+				background-color:rgba(255,255,255,0.5);
+				border: 1px solid gray;
+				padding: 2%;
+				border-radius:0 0 8px 8px;
+			}
+			.dicussname{
+				width: 100%;
+				height: 36px;
+			}
+			.text1 {
+				width: 70%;
+				height: 26px;
+				line-height: 26px;
+				font-size: 16px;
+			}
+			.dicusscontent{
+				width: 100%;
+				height: 100px;
+				margin-top: 5px;
+			}
+			.text2 {
+				width: 70%;
+				height: 100px;
+				font-size: 15px;
+				vertical-align: top;
+				overflow: auto;
+			}
+			.dicussbottom{
+				width: 96%;
+				height: 30px;
+				margin-top: 5px;
+			}
+			.dicussbutton{
+				width: 30%;
+				height: 30px;
+				/*margin-left: 50px;*/
+				float: left;
+			}
+			.text3 {
+				font-size: 16px;
+				padding: 1% 2%;
+				border: 1px solid gray;
+			}
+			.dicusszishu{
+				width: 70%;
+				height: 30px;
+				/*line-height: 30px;*/
+				float: left;
+			}
+			.zishu {
+				padding-left: 20px;
+				color: black;
+				font-size: 18px;
+			}
+			.ullist li {
+				margin-top: 10px;
+				border: 1px solid gray;
+				background: #f9f9f9;
+				border-radius: 10px;
+				list-style: none;
+				overflow: hidden;
+			}
+			.ullist li h6 {
+				font-size: 16px;
+				padding: 1% 2%;
+				background: #ccc;
+			}
+			.ullist li h6 a {
+				float: right;
+				color: red;
+			}
+			.ullist li p {
+				font-size: 14px;
+				text-indent: 28px;
+				/*line-height: 150%;*/
+				padding: 2%;
+			}
+			.bottom2{
+				width: 100%;
+				text-align: center;
+				line-height: 200%;
+				background-color: rgba(0,0,0,0.7);
+				color: ghostwhite;
+				font-size: 12px;
+				word-wrap: break-word;
+				position: relative;
+				z-index: 10;
+			}
